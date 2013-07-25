@@ -17,21 +17,21 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-contrib-mtc');
 ```
 
-## The "contrib_mtc" task
+## The "mtc" task
 
 ### Overview
-In your project's Gruntfile, add a section named `contrib_mtc` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `mtc` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  contrib_mtc: {
+  mtc: {
     options: {
       // Task-specific options go here.
     },
     your_target: {
       // Target-specific file lists and/or options go here.
-    },
-  },
+    }
+  }
 })
 ```
 
@@ -56,12 +56,13 @@ In this example, the default options are used to do something with whatever. So 
 
 ```js
 grunt.initConfig({
-  contrib_mtc: {
+  mtc: {
+    pkg: grunt.file.readJSON('package.json'),
     options: {},
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+      'build/<%= pkg.name %>-ie.css': ['src/test.css']
+    }
+  }
 })
 ```
 
@@ -70,15 +71,15 @@ In this example, custom options are used to do something else with whatever else
 
 ```js
 grunt.initConfig({
-  contrib_mtc: {
+  mtc: {
     options: {
       separator: ': ',
-      punctuation: ' !!!',
+      punctuation: ' !!!'
     },
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+      'build/<%= pkg.name %>-ie.css': ['src/test.css']
+    }
+  }
 })
 ```
 
