@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # grunt-contrib-mtc
 
 > Checkout the @media string from css files, and create a new css file with class prefix.
