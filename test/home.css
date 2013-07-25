@@ -1,0 +1,178 @@
+
+/* source from: >> src/home/0.animation.css */
+.search-wrap {
+  -webkit-transform: translateZ(0);
+}
+.item-browser {
+  -webkit-transition: opacity .3s;
+  -webkit-transition-delay: .2s;
+  -moz-transition: opacity .3s;
+  -moz-transition-delay: .2s;
+  -o-transition: opacity .3s;
+  -o-transition-delay: .2s;
+  transition: opacity .3s;
+  transition-delay: .2s;
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .wo-justify .dib {
+    display: block;
+    /* webkit \u4f4e\u7248\u672c\u4e0d\u652f\u6301 inline-block bug */
+  
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .dib-wrap {
+    letter-spacing: -5px;
+    /* Safari \u7b49\u4e0d\u652f\u6301\u5b57\u4f53\u5927\u5c0f\u4e3a 0 \u7684\u6d4f\u89c8\u5668, N \u6839\u636e\u7236\u7ea7\u5b57\u4f53\u8c03\u8282*/
+  
+  }
+}
+
+@media (max-width: 1219px) {
+  .etao-content,
+  .page-footer {
+    width: 990px;
+  }
+  .search-wrap {
+    position: static;
+  }
+  .search-product {
+    top: 85px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+  }
+  .main-content {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 748px;
+    border: 1px solid #dedede;
+  }
+  .search-category,
+  .search-wrap {
+    width: 750px;
+  }
+}
+@media (max-width: 1009px) {
+  .etao-content,
+  .page-footer {
+    width: 750px;
+  }
+  .search-wrap {
+    position: static;
+  }
+  .search-product {
+    top: 85px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+  }
+  .main-content {
+    width: 750px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .fixed-modules {
+    position: relative;
+    width: 750px;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .fixed-modules .fixed-wrap {
+    width: 750px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .fixed-modules .mod {
+    margin-right: 10px;
+    padding: 20px 5px;
+  }
+  .fixed-modules .fixed-mod,
+  .fixed-modules .fixed-mod1,
+  .fixed-modules .fixed-mod2 {
+    padding: 20px 8px 20px 7px;
+  }
+  .mod-wrap .mod {
+    width: 228px;
+    border: 1px solid #dedede;
+  }
+  .search-category,
+  .search-wrap {
+    width: 750px;
+  }
+}
+.w770 .fixed-modules .fixed-wrap {
+  width: 750px;
+  height: 300px;
+  overflow: hidden;
+}
+@media (min-width: 1220px) {
+  .etao-header-default,
+  .etao-header-homepage {
+    width: 958px;
+    _position: absolute;
+  }
+  div.ks-suggest-container {
+    width: 625px!important;
+    _width: 640px!important;
+  }
+  .hp-channel-category {
+    _margin-top: 200px;
+  }
+  .etao-header-default .etao-logo,
+  .etao-header-homepage .etao-logo {
+    width: 230px;
+    background: url(http://img02.taobaocdn.com/tps/i2/T18n4FFathXXXuO5w5-110-28.png) no-repeat #377bee 79px 119px;
+    _background: url(http://img04.taobaocdn.com/tps/i4/T1yZ8CFeRaXXcXV.w6-114-32.png) no-repeat #377bee 79px 119px;
+  }
+  .common-search {
+    left: 260px;
+  }
+}
+@media (max-width: 1219px) {
+  .etao-header-default .common-search,
+  .etao-header-homepage .common-search {
+    left: 230px;
+  }
+  .etao-header-default,
+  .etao-header-homepage {
+    width: 748px;
+  }
+  div.ks-suggest-container {
+    width: 448px!important;
+    _width: 430px!important;
+  }
+  .etao-header-default .etao-logo,
+  .etao-header-homepage .etao-logo {
+    background-image: none;
+  }
+  .etao-header-default .etao-logo,
+  .etao-header-homepage .etao-logo {
+    width: 200px;
+  }
+  .etao-header-default .etao-logo .etao-en-logo,
+  .etao-header-homepage .etao-logo .etao-en-logo {
+    display: block;
+    left: 63px;
+  }
+  .etao-header-default .etao-logo,
+  .etao-header-homepage .etao-logo {
+    width: 200px;
+  }
+  .etao-header-default .etao-logo .etao-main-logo,
+  .etao-header-homepage .etao-logo .etao-main-logo {
+    left: 59px;
+  }
+}
+
+@media (min-width: 1220px) {
+  #etao-footer {
+    overflow: hidden;
+  }
+}
+
+span.ks-suggest-result {
+	padding-right: 10px;
+}

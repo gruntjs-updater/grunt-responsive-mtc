@@ -1,0 +1,16 @@
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	content: "";
+	visibility: hidden;
+}
+
+@media (max-width: 768px) {
+	#header {
+		width: 100%;
+	}
+}

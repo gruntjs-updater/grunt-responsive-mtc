@@ -1,0 +1,43 @@
+{
+  "name": "grunt-contrib-mtc",
+  "description": "Checkout the @media string from css files, and create a new css file with class prefix.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mailzwj/grunt-contrib-mtc",
+  "author": {
+    "name": "MrZheng",
+    "email": "mailzwj@126.com",
+    "url": "http://www.seejs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mailzwj/grunt-contrib-mtc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mailzwj/grunt-contrib-mtc/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mailzwj/grunt-contrib-mtc/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
