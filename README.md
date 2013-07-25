@@ -1,26 +1,26 @@
 # grunt-contrib-mtc
 
-> Checkout the @media string from css files, and create a new css file with class prefix.
+> Media to class 的首字母缩写。功能：从指定文件中抽取@media块, 生成带有尺寸前缀的新样式文件。 适用于低版本IE下响应式css的生成。
 
 ## Getting Started
-This plugin requires Grunt `~0.4.1`
+本插件基于grunt `~0.4.1` 开发。
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+如果你之前没有使用过 [Grunt](http://gruntjs.com/) , 打开 [开始使用](http://gruntjs.com/getting-started) , 查看如何创建一个 [Gruntfile](http://gruntjs.com/sample-gruntfile) 以及安装和使用Grunt插件。 你可以通过以下命令安装该插件:
 
 ```shell
 npm install grunt-contrib-mtc --save-dev
 ```
 
-Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+如果插件已经安装完成，你便可以在Gruntfile中使用下面这句 JavaScript 启用插件:
 
 ```js
 grunt.loadNpmTasks('grunt-contrib-mtc');
 ```
 
-## The "mtc" task
+## "mtc" 任务
 
-### Overview
-In your project's Gruntfile, add a section named `mtc` to the data object passed into `grunt.initConfig()`.
+### 概述
+在项目的 Gruntfile 的 `grunt.initConfig()` 中, 添加名为 `mtc` 的配置对象。
 
 ```js
 grunt.initConfig({
@@ -28,31 +28,34 @@ grunt.initConfig({
     options: {
       // Task-specific options go here.
     },
-    your_target: {
+    files: {
       // Target-specific file lists and/or options go here.
     }
   }
 })
 ```
 
-### Options
+### 选项
 
 #### options.separator
-Type: `String`
-Default value: `',  '`
+类型: `String`
+默认值: `',  '`
 
-A string value that is used to do something with whatever.
+该版本中暂时未使用
 
 #### options.punctuation
-Type: `String`
-Default value: `'.'`
+类型: `String`
+默认值: `''`
 
-A string value that is used to do something else with whatever else.
+用于拼接多文件间生成样式的字符串，默认为空，可为`\n`、`/* create from filename */`等。
 
-### Usage Examples
+### 使用案例
+转换效果大致如下：
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+![grunt-contrib-mtc](http://www.seejs.com/wp-content/uploads/2013/07/mtc.png)
+
+#### 默认配置
+从 src 目录下的 test.css 文件中抽取 @media 块，在 build 文件夹中生成与项目同名并追加 `-ie` 后缀的 css 文件。
 
 ```js
 grunt.initConfig({
@@ -66,15 +69,15 @@ grunt.initConfig({
 })
 ```
 
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+#### 自定义配置
+内容与默认配置大致相同，增加 `options` 配置：
 
 ```js
 grunt.initConfig({
   mtc: {
     options: {
       separator: ': ',
-      punctuation: ' !!!'
+      punctuation: '/*以下为新文件*/'
     },
     files: {
       'build/<%= pkg.name %>-ie.css': ['src/test.css']
@@ -83,8 +86,18 @@ grunt.initConfig({
 })
 ```
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+#### 执行任务
+首先注册任务，使用以下命令：
 
-## Release History
-_(Nothing yet)_
+```js
+grunt.registerTask('default', ['mtc']);
+```
+
+然后执行任务，使用以下命令：
+
+```js
+grunt default
+```
+
+## 发布历史
+* 2013/07/25      v0.1.0      第一版发布。 
