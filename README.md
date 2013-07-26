@@ -49,6 +49,12 @@ grunt.initConfig({
 
 用于拼接多文件间生成样式的字符串，默认为空，可为`\n`、`/* create from filename */`等。
 
+#### options.prefix
+类型: `String`
+默认值: `'w'`
+
+定义生成样式前缀（例：`prefix: "mw"`，将得到类似 `.mw1024` 的前缀）。
+
 ### 使用案例
 转换效果大致如下：
 
@@ -77,7 +83,8 @@ grunt.initConfig({
   mtc: {
     options: {
       separator: ': ',
-      punctuation: '/*以下为新文件*/'
+      punctuation: '/*以下为新文件*/'，
+      prefix: "mw"
     },
     files: {
       'build/<%= pkg.name %>-ie.css': ['src/test.css']
@@ -101,3 +108,5 @@ grunt default
 
 ## 发布历史
 * 2013/07/25      v0.1.0      第一版发布。 
+* 2013/07/25      v0.1.1      更新文档。
+* 2013/07/26      v0.1.2      新增配置参数 prefix ，优化正则表达式。

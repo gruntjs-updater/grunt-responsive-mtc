@@ -32,6 +32,7 @@ module.exports = function(grunt) {
     mtc: {
       default_options: {
         options: {
+          prefix: "mw"
         },
         files: {
           'build/home-ie.css': ['test/home.css', 'test/demo.css']

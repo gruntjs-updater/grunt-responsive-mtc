@@ -16,7 +16,8 @@ module.exports = function(grunt) {
 		// Merge task-specific and/or target-specific options with these defaults.
 		var options = this.options({
 			punctuation: '.',
-			separator: ''
+			separator: '',
+			prefix: 'w'
 		});
 
 		// console.log(this.files);
@@ -37,24 +38,27 @@ module.exports = function(grunt) {
 				var sResult = "";
 				var sFile = grunt.file.read(filepath);
 				var edges = [];
-				var rMedia = /(@media\s?[\w\s:\)\(\-]*)\{[\s\n\r\t]*([\w\s\n\:\)\*\#\_\(\-\"\'\;\,\.\{\}\/!%]*)\}[\n\r\s\t]*\}/ig;
+				var rMedia = /(@media[^\{]*)\{((.|\n|\r)*?\})[\n\s\r\t]*\}/ig;
 				var rEdge = /(min|max)-width\s*\:\s*(\d+)[a-z]+/ig;
-				var prev = /((^|,|\n|\r)\s*([\.#]\w[^{,]*?))([{,])/ig;
+				var prev = /((^|,|\n|\r)\s*([\.#]?\w[\w\-\s_\.#]*))([{,])/ig;
 				var aMedias = sFile.match(rMedia);
-				// console.log(sFile);
+				// console.log(rMedia.test("@media screen and (max-width: 1220px) {}}"));
+				// console.log(aMedias);
 				if(aMedias){
 					// console.log(aMedias);
 					aMedias.forEach(function(s, i){
 						aMedias[i] = s.replace(rMedia, function(){
 							var argo = arguments;
 							var size = 1600;
-							var cls = argo[2] ? argo[2] + "}\n" : "";
+							var cls = argo[2] ? argo[2] + "\n" : "";
 							// grunt.log.writeln(argo[1]);
-							if(argo[1].match(rEdge)){
+							if(argo[1] && argo[1].match(rEdge)){
 								size = RegExp.$2;
 								edges.push(size);
-								cls = cls.replace(prev, "\n.w" + size + " $3 $4");
+								cls = cls.replace(prev, "\n." + options.prefix + size + " $3 $4");
 								return cls;
+							}else{
+								return "";
 							}
 						});
 					});
