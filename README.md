@@ -37,13 +37,13 @@ grunt.initConfig({
 
 ### 选项
 
-#### options.separator
+#### options.punctuation
 类型: `String`
 默认值: `',  '`
 
 该版本中暂时未使用
 
-#### options.punctuation
+#### options.separator
 类型: `String`
 默认值: `''`
 
