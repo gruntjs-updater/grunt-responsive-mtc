@@ -82,8 +82,8 @@ grunt.initConfig({
 grunt.initConfig({
   mtc: {
     options: {
-      separator: ': ',
-      punctuation: '/*以下为新文件*/'，
+      separator: '/*以下为新文件*/',
+      punctuation: ': '，
       prefix: "mw"
     },
     files: {
