@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-mtc",
   "description": "Checkout the @media string from css files, and create a new css file with class prefix.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/mailzwj/grunt-contrib-mtc",
   "author": {
     "name": "MrZheng",

@@ -47,7 +47,7 @@ grunt.initConfig({
 类型: `String`
 默认值: `''`
 
-用于拼接多文件间生成样式的字符串，默认为空，可为`\n`、`/* create from filename */`等。
+<s>用于拼接多文件间生成样式的字符串，默认为空，可为`\n`、`/* create from filename */`等。</s>该版本已废弃。
 
 #### options.prefix
 类型: `String`
@@ -82,7 +82,6 @@ grunt.initConfig({
 grunt.initConfig({
   mtc: {
     options: {
-      separator: '/*以下为新文件*/',
       punctuation: ': '，
       prefix: "mw"
     },
@@ -110,4 +109,5 @@ grunt default
 * 2013/07/25      v0.1.0      第一版发布。 
 * 2013/07/25      v0.1.1      更新文档。
 * 2013/07/26      v0.1.2      新增配置参数 prefix ，优化正则表达式。
-* 2013/07/28      v0.1.3      修正文档说明，清理代码
+* 2013/07/28      v0.1.3      修正文档说明，清理代码。
+* 2013/07/29      v0.1.4      配置参数调整，新增代码格式化功能。

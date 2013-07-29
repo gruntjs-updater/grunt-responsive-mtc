@@ -115,8 +115,8 @@
     _position: absolute;
   }
   div.ks-suggest-container {
-    width: 625px!important;
-    _width: 640px!important;
+    width: 625px !important;
+    _width: 640px !important;
   }
   .hp-channel-category {
     _margin-top: 200px;
