@@ -47,7 +47,7 @@ grunt.initConfig({
 类型: `String`
 默认值: `''`
 
-*用于拼接多文件间生成样式的字符串，默认为空，可为`\n`、`/* create from filename */`等。***该版本已废弃。**
+*用于拼接多文件间生成样式的字符串，默认为空，可为`\n`、`/* create from filename */`等。* **该版本已废弃。**
 
 #### options.prefix
 类型: `String`
