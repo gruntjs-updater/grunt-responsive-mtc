@@ -8,13 +8,13 @@
 如果你之前没有使用过 [Grunt](http://gruntjs.com/) , 打开 [开始使用](http://gruntjs.com/getting-started) , 查看如何创建一个 [Gruntfile](http://gruntjs.com/sample-gruntfile) 以及安装和使用Grunt插件。 你可以通过以下命令安装该插件:
 
 ```shell
-npm install grunt-contrib-mtc --save-dev
+npm install grunt-responsive-mtc --save-dev
 ```
 
 如果插件已经安装完成，你便可以在Gruntfile中使用下面这句 JavaScript 启用插件:
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-mtc');
+grunt.loadNpmTasks('grunt-responsive-mtc');
 ```
 
 ## "mtc" 任务
@@ -106,6 +106,7 @@ grunt default
 ```
 
 ## 发布历史
+* 2014/03/02      v0.1.5      修改组件名称
 * 2013/07/29      v0.1.4      配置参数调整，新增代码格式化功能。
 * 2013/07/28      v0.1.3      修正文档说明，清理代码。
 * 2013/07/26      v0.1.2      新增配置参数 prefix ，优化正则表达式。

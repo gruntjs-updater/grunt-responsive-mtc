@@ -1,0 +1,162 @@
+/* source from: test/home.css */
+.mw1219 .etao-content,
+.mw1219 .page-footer {
+  width: 990px;
+}
+
+.mw1219 .search-wrap {
+  position: static;
+}
+
+.mw1219 .search-product {
+  top: 85px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f8f8f8;
+}
+
+.mw1219 .main-content {
+  margin-left: 0;
+  margin-top: 10px;
+  width: 748px;
+  border: 1px solid #dedede;
+}
+
+.mw1219 .search-category,
+.mw1219 .search-wrap {
+  width: 750px;
+}
+
+.mw1009 .etao-content,
+.mw1009 .page-footer {
+  width: 750px;
+}
+
+.mw1009 .search-wrap {
+  position: static;
+}
+
+.mw1009 .search-product {
+  top: 85px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f8f8f8;
+}
+
+.mw1009 .main-content {
+  width: 750px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.mw1009 .fixed-modules {
+  position: relative;
+  width: 750px;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.mw1009 .fixed-modules .fixed-wrap {
+  width: 750px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.mw1009 .fixed-modules .mod {
+  margin-right: 10px;
+  padding: 20px 5px;
+}
+
+.mw1009 .fixed-modules .fixed-mod,
+.mw1009 .fixed-modules .fixed-mod1,
+.mw1009 .fixed-modules .fixed-mod2 {
+  padding: 20px 8px 20px 7px;
+}
+
+.mw1009 .mod-wrap .mod {
+  width: 228px;
+  border: 1px solid #dedede;
+}
+
+.mw1009 .search-category,
+.mw1009 .search-wrap {
+  width: 750px;
+}
+
+.mw1220 .etao-header-default,
+.mw1220 .etao-header-homepage {
+  width: 958px;
+  _position: absolute;
+}
+
+.mw1220 div.ks-suggest-container {
+  width: 625px !important;
+  _width: 640px !important;
+}
+
+.mw1220 .hp-channel-category {
+  _margin-top: 200px;
+}
+
+.mw1220 .etao-header-default .etao-logo,
+.mw1220 .etao-header-homepage .etao-logo {
+  width: 230px;
+  background: url(http://img02.taobaocdn.com/tps/i2/T18n4FFathXXXuO5w5-110-28.png) no-repeat #377bee 79px 119px;
+  _background: url(http://img04.taobaocdn.com/tps/i4/T1yZ8CFeRaXXcXV.w6-114-32.png) no-repeat #377bee 79px 119px;
+}
+
+.mw1220 .common-search {
+  left: 260px;
+}
+
+.mw1219 .etao-header-default .common-search,
+.mw1219 .etao-header-homepage .common-search {
+  left: 230px;
+}
+
+.mw1219 .etao-header-default,
+.mw1219 .etao-header-homepage {
+  width: 748px;
+}
+
+.mw1219 div.ks-suggest-container {
+  width: 448px!important;
+  _width: 430px!important;
+}
+
+.mw1219 .etao-header-default .etao-logo,
+.mw1219 .etao-header-homepage .etao-logo {
+  background-image: none;
+}
+
+.mw1219 .etao-header-default .etao-logo,
+.mw1219 .etao-header-homepage .etao-logo {
+  width: 200px;
+}
+
+.mw1219 .etao-header-default .etao-logo .etao-en-logo,
+.mw1219 .etao-header-homepage .etao-logo .etao-en-logo {
+  display: block;
+  left: 63px;
+}
+
+.mw1219 .etao-header-default .etao-logo,
+.mw1219 .etao-header-homepage .etao-logo {
+  width: 200px;
+}
+
+.mw1219 .etao-header-default .etao-logo .etao-main-logo,
+.mw1219 .etao-header-homepage .etao-logo .etao-main-logo {
+  left: 59px;
+}
+
+.mw1220 #etao-footer {
+  overflow: hidden;
+}
+
+/* source from: test/demo.css */
+.mw768 #header {
+		width: 100%;
+	}

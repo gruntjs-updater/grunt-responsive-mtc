@@ -1,8 +1,8 @@
 {
-  "name": "grunt-contrib-mtc",
+  "name": "grunt-responsive-mtc",
   "description": "Checkout the @media string from css files, and create a new css file with class prefix.",
-  "version": "0.1.4",
-  "homepage": "https://github.com/mailzwj/grunt-contrib-mtc",
+  "version": "0.1.5",
+  "homepage": "https://github.com/mailzwj/grunt-responsive-mtc",
   "author": {
     "name": "MrZheng",
     "email": "mailzwj@126.com",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mailzwj/grunt-contrib-mtc.git"
+    "url": "git://github.com/mailzwj/grunt-responsive-mtc.git"
   },
   "bugs": {
-    "url": "https://github.com/mailzwj/grunt-contrib-mtc/issues"
+    "url": "https://github.com/mailzwj/grunt-responsive-mtc/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/mailzwj/grunt-contrib-mtc/blob/master/LICENSE-MIT"
+      "url": "https://github.com/mailzwj/grunt-responsive-mtc/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
